@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+
+/*--------------------------------------------------------------
+# Estilo general
+--------------------------------------------------------------*/
+body {
+  margin: 0;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+}
+
+.pages {
+  margin-top: 100px;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+}
+
+.social-links a {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.164);
+  color: #fff;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.social-links a:hover {
+  background: rgba(255, 255, 255, 0.164);
+  color: #fff;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Bienvenida
+--------------------------------------------------------------*/
+.welcome {
+  text-align: left;
+}
+
+.welcome#fondo {
+  background-image: url(../public/img/fondo-inicio.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: unset;
+  background-size: cover;
+  height: 450px;
+  max-width: 100%;
+  position:relative;
+  color: white;
+  z-index:1;
+}
+
+.welcome#fondo::after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.4);
+  z-index:-1;
+}
+
+.text-welcome h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-welcome strong {
+  color: #ffffff;
+}
+
+.text-welcome h2 {
+  color: rgb(207, 207, 207);
+  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Contacto
+--------------------------------------------------------------*/
+#avatar {
+  height: 20vw;
+  width: 20vw;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Tarjetas
+--------------------------------------------------------------*/
+.card {
+  border-radius: 0;
+}
+
+.card-img-top {
+  height: calc(15rem);
+  object-fit: cover;
+}
+
+.img-work img {
+  filter: grayscale(65%);
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Para todos los titulos de página
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.section-title span {
+  position: absolute;
+  top: 30px;
+  color: #eef0f2;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.section-title h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #3b434a;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Curriculum
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #3b434a;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #82909c;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffb727;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #eef0f2;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #82909c;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Pie de página
+--------------------------------------------------------------*/
+.footer {
+  margin-top: 4em;
+  font-family: "Raleway", sans-serif;
+  background: url(../public/img/fondo-footer.jpg) top center no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
